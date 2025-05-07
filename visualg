@@ -1,0 +1,19 @@
+algoritmo "semnome"
+var
+n1, n2: real
+inicio
+escreva("insira o primeiro numero")
+leia(n1)
+escreva("insira o segundo numero")
+leia(n2)
+se (n2>n1) entao
+   escreva("o maior numero é", n2)
+senao
+      se (n1 = n2) entao
+         escreva("os valores sao iguais")
+      senao
+         escreva("o maior valor é", n1)
+      fimse
+fimse
+fimalgoritmo
+
