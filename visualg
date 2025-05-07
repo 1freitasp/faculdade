@@ -17,3 +17,27 @@ senao
 fimse
 fimalgoritmo
 
+
+
+algoritmo "nota"
+var
+n1, n2, n3, n4: real
+inicio
+escreva("insira a primeira nota")
+leia(n1)
+escreva("insira a segunda nota")
+leia(n2)
+escreva("insira a terceira nota")
+leia(n3)
+se ((n1+n2+n3)/3)>= 7 entao
+   escreva("voce passou por media")
+senao
+     escreva("abaixo da media, insira a nota da quarta prova")
+     leia(n4)
+     se ((n1+n2+n3+n4)/4)>= 7 entao
+        escreva("voce passou por média")
+     senao
+          escreva("reprovado")
+     fimse
+fimse
+fimalgoritmo
