@@ -41,3 +41,174 @@ senao
      fimse
 fimse
 fimalgoritmo
+
+//aula do dia 09/05 - exercícios
+LISTA DE EXERCÍCIOS DE ALGORITMOS
+1)	Faça um algoritmo que leia um numero inteiro e mostre o seu dobro na tela.
+algoritmo "semnome"
+var
+n1: inteiro
+inicio
+escreva("insira um numero inteiro")
+leia(n1)
+escreva(n1*2)
+fimalgoritmo
+
+2)	Faça um algoritmo que receba a temperatura em graus Celsius e apresente-a em graus Fahrenheit, de acordo com a fórmula: F = (1.8 x ºC) + 32.
+algoritmo "semnome"
+var
+c: real
+inicio
+escreva("insira a temperatura em graus celsius")
+leia(c)
+escreva("a temperatura em farenheit é", (1.8 * C) + 32)
+fimalgoritmo
+
+3)	Faça um algoritmo que leia um número inteiro e diga se este é positivo, negativo.
+algoritmo "semnome"
+var
+n1: inteiro
+inicio
+escreva("insira um numero inteiro")
+leia(n1)
+se (n1>0) entao
+escreva("o numero é positivo")
+senao
+     se(n1=0) entao
+     escreva("o numero é zero")
+     senao
+     escreva("o numero é negativo")
+     fimse
+fimse
+fimalgoritmo
+
+4)	Faça um algoritmo que leia um número inteiro e diga se este é positivo, negativo. Caso seja positivo informe também se ele é par ou ímpar.
+algoritmo "semnome"
+var
+n1: inteiro
+inicio
+escreva("insira um numero inteiro")
+leia(n1)
+se (n1<0) entao
+escreva("o numero é negativo")
+senao
+ escreva("o numero é positivo")
+ se (n1 %2 = 0) entao
+ escreva(" e par")
+ senao
+ escreva(" e impar")
+ fimse
+fimse
+fimalgoritmo
+
+5)	Faça um algoritmo que leia um número inteiro e diga se este é positivo, negativo ou zero.
+algoritmo "semnome"
+var
+n1: inteiro
+inicio
+escreva("insira um numero inteiro")
+leia(n1)
+se (n1>0) entao
+escreva("o numero é positivo")
+senao
+     se(n1=0) entao
+     escreva("o numero é zero")
+     senao
+     escreva("o numero é negativo")
+     fimse
+fimse
+fimalgoritmo
+
+6)	Faça um algoritmo que leia um numero e informe se ele é par ou impar.
+algoritmo "semnome"
+var
+   n1: inteiro
+inicio
+   escreva("insira um numero inteiro")
+   leia(n1)
+   se (n1%2 = 0) entao
+      escreva("o numero é par")
+   senao
+      escreva("o numero é impar")
+   fimse
+fimalgoritmo
+
+7)	Faça um algoritmo que leia dois números inteiros e determine se os dois números são iguais. Caso contrário, mostre na tela qual dos dois é o maior.
+algoritmo "semnome"
+var
+   n1,n2: inteiro
+inicio
+   escreva("insira um numero inteiro")
+   leia(n1)
+   escreva("insira o segundo numero")
+   leia(n2)
+   se (n1=n2) entao
+      escreva("os numeros sao iguais")
+   senao
+      se(n1>n2) entao
+         escreva(" maior numero é", n1)
+      senao
+         escreva("o maior numero é", n2)
+      fimse
+   fimse
+fimalgoritmo
+
+8)	Faça um algoritmo que leia dois números e apresente-os na tela em ordem crescente.
+algoritmo "semnome"
+var
+   n1,n2: inteiro
+inicio
+   escreva("insira um numero inteiro")
+   leia(n1)
+   escreva("insira o segundo numero")
+   leia(n2)
+   se (n1>n2) entao
+   escreva(n2,n1)
+   senao
+   escreva(n1,n2)
+   fimse
+fimalgoritmo
+
+9)	Tendo como dados de entrada a altura e o sexo de uma pessoa (M: masculino e F: feminino), construa um algoritmo que calcule seu peso ideal, utilizando as seguintes fórmulas: 
+- para homens: (72.7*h)-58
+- para mulheres: (62.1*h)-44.7
+algoritmo "semnome"
+var
+   sexo: caracter
+   altura: real
+inicio
+   escreva("insira o seu sexo(m/f)")
+   leia(sexo)
+   escreva("insira a sua altura em metros")
+   leia(altura)
+   se (sexo = "m")entao
+      escreva("o seu peso ideal é", (72.7*altura)-58)
+   senao
+      escreva("o seu peso ideal é", (62.1*altura)-44.7)
+   fimse
+fimalgoritmo
+
+10)	Elabore um algoritmo que dada a idade de um nadador classifica-o em uma das seguintes categorias:
+infantil = 5 - 10 anos 
+juvenil = 11-17 anos 
+adulto = maiores de 18 anos
+algoritmo "semnome"
+var
+   idade:inteiro
+inicio
+   escreva("insira a sua idade")
+   leia(idade)
+   se(idade>18) entao
+      escreva("sua categoria é adulto")
+   senao
+      se(idade>=5) e (idade<=10) entao
+         escreva("sua categoria é infantil")
+      senao
+         se (idade<5) entao
+            escreva("o aluno nao tem a idade minima")
+         senao
+            escreva("sua categoria é juvenil")
+         fimse
+      fimse
+   fimse
+fimalgoritmo
