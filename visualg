@@ -215,3 +215,37 @@ fimalgoritmo
 
 //AULA DO DIA 14/05
 
+1)
+algoritmo "semnome"
+var
+   n1, contador: inteiro
+inicio
+   contador<-0
+   enquanto (contador<4) faca
+      escreva("escreva um numero inteiro")
+      leia(n1)
+      se (n1%2=0) entao
+         escreval("o numero é par")
+      senao
+         escreval("o numero é impar")
+      fimse
+      contador<-contador+1
+   fimenquanto
+fimalgoritmo
+
+2)
+algoritmo "semnome"
+var
+   n1: inteiro
+inicio
+   escreva("insira um numero inteiro")
+   leia(n1)
+   enquanto (n1<>0) faca
+      n1 <- n1-1
+      se(n1% 2 <>0) entao
+         escreva(n1)
+      senao
+         escreva()
+      fimse
+   fimenquanto
+fimalgoritmo
