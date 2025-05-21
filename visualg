@@ -343,3 +343,80 @@ inicio
       fimse
    ate (contador = 3)
 fimalgoritmo
+
+// AULA DO DIA 21/05
+
+algoritmo "semnome"
+var
+   n1: inteiro
+inicio
+   n1 <- 1
+   enquanto (n1<>0) faca
+      escreva("insira um numero inteiro")
+      leia(n1)
+      se(n1<>0) entao
+         se (n1%3= 0) entao
+            escreval("o numero e divisivel por 3")
+         senao
+            escreval("nao divisivel por 3")
+         fimse
+      fimse
+   fimenquanto
+fimalgoritmo
+
+algoritmo "semnome"
+var
+   n1, contador, maiorq, menorq, igual: inteiro
+inicio
+   maiorq <- 0
+   menorq <- 0
+   igual <- 0
+   contador<- 0
+   para contador de 0 ate 4 faca
+      contador<- contador + 1
+      escreval("insira um numero inteiro")
+      leia(n1)
+      se (n1=15) entao
+         igual<- igual + 1
+      senao
+         se(n1>15) entao
+            maiorq<- maiorq + 1
+            escreval("o numero é maior que 15")
+         senao
+            menorq<- menorq + 1
+            escreval("o numero é menor que 15")
+         fimse
+      fimse
+      fimpara
+      escreva(maiorq,"numeros sao maiores que 15", menorq,"numeros sao menores do que 15")
+fimalgoritmo
+
+algoritmo "semnome"
+var
+   n1, contador, maiorq, menorq, igual: inteiro
+inicio
+   maiorq <- 0
+   menorq <- 0
+   igual <- 0
+   contador<- 0
+   repita
+      contador<- contador + 1
+      escreval("insira um numero inteiro")
+      leia(n1)
+      se (n1=15) entao
+         igual<- igual + 1
+      senao
+         se(n1>15) entao
+            maiorq<- maiorq + 1
+            escreval("o numero é maior que 15")
+         senao
+            menorq<- menorq + 1
+            escreval("o numero é menor que 15")
+         fimse
+      fimse
+      ate n1=-1
+      escreva(maiorq,"numeros sao maiores que 15,", menorq,"numeros sao menores do que 15")
+fimalgoritmo
+
+// importante -- soma<- soma+1 
+
