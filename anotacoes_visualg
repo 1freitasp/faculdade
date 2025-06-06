@@ -418,5 +418,34 @@ inicio
       escreva(maiorq,"numeros sao maiores que 15,", menorq,"numeros sao menores do que 15")
 fimalgoritmo
 
-// importante -- soma<- soma+1 
 
+algoritmo "semnome"
+tipo
+   ficha = registro
+      nome: caracter
+      salario_bruto, inss, salario_liquido, matricula: real
+   fimregistro
+var
+   f: vetor [1..2] de ficha
+   i: inteiro
+inicio
+   para i de 1 ate 2 faca
+      escreval("digite o nome")
+      leia(f[i].nome)
+      escreval("insira a mtricula")
+      leia(f[i].matricula)
+      escreval("insira o seu salario bruto")
+      leia(f[i].salario_bruto)
+      f[i].inss <- (0.11 * f[i].salario_bruto)
+      f[i].salario_liquido <- (f[i].salario_bruto - f[i].inss)
+      escreval("o desconto do inss é", f[i].inss)
+      escreval("o salario liquido de", f[i].nome,"é", f[i].salario_liquido)
+   fimpara
+   para i de 1 ate 2 faca
+      escreval(f[i].nome)
+      escreval(f[i].matricula)
+      escreval(f[i].salario_bruto)
+      escreval(f[i].inss)
+      escreval(f[i].salario_liquido)
+   fimpara
+fimalgoritmo
