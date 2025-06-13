@@ -449,3 +449,8 @@ inicio
       escreval(f[i].salario_liquido)
    fimpara
 fimalgoritmo
+
+SUB ROTINAS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+TIPOS: PROCEDIMENTOS, FUNCOES
+TPOS DE VARIAVEIS: LOCAIS E GLOBAIS
+AS LOCAIS SO EXISTEM NA SUB ROTINA A QUE ELAS PERTECEM
